@@ -1,0 +1,274 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header styles */
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+  padding: 20px 80px 20px 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  /* the height */
+  --h: 1.2em;
+
+  line-height: var(--h);
+  color: #0000;
+  text-shadow: 
+    0 var(--_t,var(--h)) #fff,
+    0 0 var(--_c, #000);
+  background: 
+    linear-gradient(#1095c1 0 0) 
+    bottom/100% var(--_d, 0) no-repeat;
+  overflow: hidden;
+  transition: 0.3s;
+}
+nav ul li a:hover {
+    --_d: 100%;
+  --_t: 0;
+  --_c: #0000;
+}
+
+
+/* Hero section styles */
+.hero-section {
+  background-color: #f7f7f7;
+  background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-03/1614839998_91-p-fon-dlya-shkolnogo-saita-138.jpg);
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  text-align: center;
+  background-position: center;
+        background-attachment: fixed;
+  background-size: 100%;
+height: 100vh;    
+}
+
+.hero-section h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 25px;
+  margin-bottom: 40px;
+  
+}
+
+/* Button styles */
+.button {
+  background-color: #333;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #333;
+}
+
+/* About section styles */
+.about-section {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 25px;
+        text-align: justify;
+        margin: 0 100px 0 100px;
+}
+
+.about-section .button {
+  margin-top: 20px;
+}
+
+/* Video section styles */
+.video-section {
+  background-color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.video-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio */
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.description-container {
+  margin-top: 50px;
+  text-align: left;
+}
+
+.description-container p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Education section styles */
+.education-section {
+  background-color: #f7f7f7;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.education-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.education-section p {
+  font-size: 25px;
+text-align: justify;
+    margin: 0 100px 0 100px;
+}
+
+/* English teaching section styles */
+.english-teaching-section {
+  background-color: #f7f7f7;
+  padding: 100px 0;
+  text-align: center;
+}
+.english-teaching-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.english-teaching-section p {
+  font-size: 25px;
+text-align: justify;
+    margin: 0 100px 0 100px;
+}
+/* Tips section styles */
+.tips-section {
+  background-color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.tips-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.tips-section p {
+  font-size: 25px;
+text-align: justify;
+    margin: 0 100px 0 100px;
+}
+
+.tips-section ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.tips-section li {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 4px;
+  margin: 10px;
+  flex: 1;
+  max-width: 400px;
+  text-align: left;
+}
+
+.tips-section li:hover {
+  background-color: #e2e2e2;
+}
+
+.tips-section li:first-child {
+  margin-left: 0;
+}
+
+.tips-section li:last-child {
+  margin-right: 0;
+}
+
+/* Resources section styles */
+.resources-section {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.resources-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.resources-section p {
+  font-size: 25px;
+text-align: justify;
+    margin: 0 100px 0 100px;
+}
+
+.resources-section .button {
+  margin-top: 20px;
+}
+
